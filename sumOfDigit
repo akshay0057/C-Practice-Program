@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num, i, sum = 0, r;
+	cout<<"Enter a number :";
+	cin>>num;
+	while(num > 0)
+	{
+		r = num % 10;
+		sum = sum + r;
+		num = num / 10;
+	}
+	cout<<"The sum digit : "<<sum;
+	return 0;
+}
